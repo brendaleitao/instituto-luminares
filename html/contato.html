@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o Instituto Luminares: endereço, telefone, e-mail e formulário de mensagem.">
+  <title>Instituto Luminares | Contato</title>
+</head>
+<body>
+
+    <header>
+  <img src="../img/logo-luminares.png"
+       alt="Logotipo do Instituto Luminares: sol sobre três figuras humanas de braços abertos"
+       width="240">
+  <h1>Instituto Luminares</h1>
+  <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos Sociais</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="canais">
+      <h2>Fale com a gente</h2>
+      <p>
+        Tem dúvidas, sugestões ou quer saber mais sobre nossos projetos?
+        Escolha o canal que preferir.
+      </p>
+
+      <address>
+        <p><strong>Endereço:</strong> Rua das Acácias, 250, Centro, Curitiba, PR, CEP 80000-000</p>
+        <p><strong>Telefone:</strong> <a href="tel:+554130000000">(41) 3000-0000</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@institutoluminares.org.br">contato@institutoluminares.org.br</a></p>
+      </address>
+
+      <h3>Horário de atendimento</h3>
+      <ul>
+        <li>Segunda a sexta: das 8h às 17h</li>
+        <li>Sábados, domingos e feriados: fechado</li>
+      </ul>
+    </section>
+
+    <section id="mensagem">
+      <h2>Envie uma mensagem</h2>
+      <p>Os campos marcados com * são obrigatórios.</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <p>
+            <label for="nome">Nome completo *</label><br>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="email">E-mail *</label><br>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" id="telefone" name="telefone"
+                   maxlength="15"
+                   pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                   placeholder="(41) 90000-0000"
+                   title="Digite o telefone no formato (00) 00000-0000"
+                   autocomplete="tel">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sua mensagem</legend>
+
+          <p>
+            <label for="assunto">Assunto *</label><br>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione</option>
+              <option value="duvida">Dúvida</option>
+              <option value="voluntariado">Voluntariado</option>
+              <option value="doacao">Doação</option>
+              <option value="parceria">Parceria</option>
+              <option value="sugestao">Sugestão</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Como prefere receber o retorno? *</legend>
+            <p>
+              <input type="radio" id="retorno-email" name="retorno" value="email" required>
+              <label for="retorno-email">Por e-mail</label>
+            </p>
+            <p>
+              <input type="radio" id="retorno-telefone" name="retorno" value="telefone">
+              <label for="retorno-telefone">Por telefone</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="texto">Mensagem *</label><br>
+            <textarea id="texto" name="texto" rows="6" cols="40" maxlength="1000" required></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="aceite" name="aceite" required>
+          <label for="aceite">Concordo com o uso dos meus dados para retorno do Instituto. *</label>
+        </p>
+
+        <p>
+          <button type="submit">Enviar mensagem</button>
+          <button type="reset">Limpar</button>
+        </p>
+
+      </form>
+    </section>
+
+    <aside>
+      <h2>Quer participar?</h2>
+      <p>
+        Para ser voluntário ou doador, faça seu <a href="cadastro.html">cadastro</a>
+        ou conheça os <a href="projetos.html">projetos sociais</a>.
+      </p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Instituto Luminares. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

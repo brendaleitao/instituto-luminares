@@ -15,3 +15,13 @@ O site apresenta a organização, seus projetos sociais e um canal de contato, c
 - Formulários acessíveis
 
 ## 📁 Estrutura do projeto
+instituto-luminares/
+├── html/ # páginas do site
+└── img/ # imagens utilizadas
+
+## 🚀 Como executar
+1. Clone o repositório: `git clone https://github.com/brendaleitao/instituto-luminares.git`
+2. Abra o arquivo `index.html` (dentro da pasta `html`) diretamente no navegador.
+
+## 👩‍💻 Autora
+Desenvolvido por [Brenda Leitão](https://github.com/brendaleitao), durante a graduação em Análise e Desenvolvimento de Sistemas.

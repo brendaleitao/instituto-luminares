@@ -46,9 +46,9 @@ instituto-luminares/
 
 ## 🚀 Como executar
 1. Clone o repositório:
-   ```bash
+```bash
    git clone https://github.com/brendaleitao/instituto-luminares.git
-   ```
+```
 2. Abra a pasta `instituto-luminares` no VS Code.
 3. Clique com o botão direito em `html/index.html` e escolha **Open with Live Server**.
 

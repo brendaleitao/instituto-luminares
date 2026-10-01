@@ -27,3 +27,12 @@ instituto-luminares/
 
 ## 👩‍💻 Autora
 Desenvolvido por [Brenda Leitão](https://github.com/brendaleitao), durante a graduação em Análise e Desenvolvimento de Sistemas.
+
+## Fluxo de trabalho
+
+- `main`: versões estáveis, marcadas com tags (v1.0.0, v1.0.1).
+- `develop`: integração do desenvolvimento contínuo.
+- `feature/*`: novas funcionalidades, criadas a partir da `develop`.
+- `hotfix/*`: correções urgentes, criadas a partir da `main`.
+
+Commits seguem Conventional Commits (`feat:`, `fix:`, `docs:`) e as versões seguem o versionamento semântico (MAJOR.MINOR.PATCH). Toda integração de branch é feita por pull request.

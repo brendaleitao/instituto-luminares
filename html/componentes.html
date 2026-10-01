@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Componentes de feedback do Instituto Luminares: badges, alertas, toast e modal.">
+  <title>Instituto Luminares | Componentes de feedback</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <img src="../img/logo-luminares.png"
+         alt="Logotipo do Instituto Luminares: sol sobre três figuras humanas de braços abertos"
+         width="240">
+    <h1>Instituto Luminares</h1>
+    <nav aria-label="Menu principal">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir ou fechar o menu">
+      <label for="menu-toggle" class="menu-icone" aria-hidden="true"></label>
+      <ul class="menu-lista">
+        <li><a href="index.html">Início</a></li>
+        <li class="tem-submenu">
+          <a href="projetos.html">Projetos Sociais</a>
+          <ul class="submenu">
+            <li><a href="projetos.html#frentes">Nossas frentes</a></li>
+            <li><a href="projetos.html#voluntariado">Seja voluntário</a></li>
+            <li><a href="projetos.html#doacoes">Doações</a></li>
+          </ul>
+        </li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="intro">
+      <h2>Componentes de feedback</h2>
+      <p>Biblioteca de badges, alertas, toast e modal do Instituto Luminares, padronizada com a paleta do design system.</p>
+    </section>
+
+    <section id="badges">
+      <h2>Badges</h2>
+      <h3>Categorias dos projetos</h3>
+      <div class="demo-linha">
+        <span class="badge badge--primario">Educação</span>
+        <span class="badge badge--info">Cultura</span>
+        <span class="badge badge--neutro">Cidadania</span>
+      </div>
+      <h3>Status</h3>
+      <div class="demo-linha">
+        <span class="badge badge--sucesso">Ativo</span>
+        <span class="badge badge--aviso">Últimas vagas</span>
+        <span class="badge badge--erro">Urgente</span>
+        <span class="badge badge--neutro">Encerrado</span>
+      </div>
+    </section>
+
+    <section id="alertas">
+      <h2>Alertas</h2>
+      <div class="alerta alerta--sucesso" role="status">
+        <p><strong>Cadastro enviado!</strong> Recebemos seus dados e entraremos em contato em até 2 dias úteis.</p>
+      </div>
+      <div class="alerta alerta--info" role="status">
+        <p><strong>Informação:</strong> a capacitação para voluntários acontece todo primeiro sábado do mês.</p>
+      </div>
+      <div class="alerta alerta--aviso" role="status">
+        <p><strong>Atenção:</strong> as vagas do projeto de Educação estão quase esgotadas.</p>
+      </div>
+      <div class="alerta alerta--erro" role="alert">
+        <p><strong>Não foi possível enviar.</strong> Confira os campos marcados e tente novamente.</p>
+      </div>
+    </section>
+
+    <section id="toast-modal">
+      <h2>Toast e modal</h2>
+      <p>Use os botões para abrir cada componente.</p>
+      <div class="demo-linha">
+        <a class="botao" href="#modal-doacao">Abrir modal</a>
+        <a class="botao botao--contorno" href="#toast-sucesso">Mostrar toast</a>
+      </div>
+    </section>
+
+    <div id="toast-sucesso" class="toast" role="status">
+      <p><strong>Doação registrada!</strong> Obrigado por apoiar o Instituto.</p>
+      <a href="#" aria-label="Fechar notificação">&#10005;</a>
+    </div>
+
+    <div id="modal-doacao" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <a href="#" class="modal-fundo" aria-label="Fechar janela"></a>
+      <div class="modal-caixa">
+        <h2 id="modal-titulo">Confirmar doação</h2>
+        <p>Você vai apoiar os projetos do Instituto Luminares com uma doação via Pix. Deseja continuar?</p>
+        <div class="modal-acoes">
+          <a class="botao botao--contorno" href="#">Cancelar</a>
+          <a class="botao" href="#toast-sucesso">Confirmar</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Instituto Luminares. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

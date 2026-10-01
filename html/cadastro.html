@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cadastre-se no Instituto Luminares como voluntário ou doador.">
   <title>Instituto Luminares | Cadastro</title>
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
@@ -14,13 +15,22 @@
          width="240">
     <h1>Instituto Luminares</h1>
     <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos Sociais</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-        <li><a href="contato.html">Contato</a></li>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir ou fechar o menu">
+  <label for="menu-toggle" class="menu-icone" aria-hidden="true"></label>
+  <ul class="menu-lista">
+    <li><a href="index.html">Início</a></li>
+    <li class="tem-submenu">
+      <a href="projetos.html">Projetos Sociais</a>
+      <ul class="submenu">
+        <li><a href="projetos.html#frentes">Nossas frentes</a></li>
+        <li><a href="projetos.html#voluntariado">Seja voluntário</a></li>
+        <li><a href="projetos.html#doacoes">Doações</a></li>
       </ul>
-    </nav>
+    </li>
+    <li><a href="cadastro.html">Cadastro</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
   </header>
 
   <main>
@@ -134,10 +144,10 @@
       </fieldset>
 
       <fieldset>
-        <legend>Como você quer participar</legend>
+        <legend>Como você quer participar?</legend>
 
         <fieldset>
-          <legend>Tipo de participação *</legend>
+          <legend>Tipos de participação *</legend>
           <p>
             <input type="radio" id="tipo-voluntario" name="tipo" value="voluntario" required>
             <label for="tipo-voluntario">Voluntário</label>

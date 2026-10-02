@@ -574,3 +574,41 @@ nav a:hover {
   #menu.aberto { display: flex; }
   header { flex-wrap: wrap; }
 }
+
+/* ===== Modo escuro (segue a preferência do sistema) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-texto: #F3F4F6;
+    --cor-texto-suave: #D1D5DB;
+    --cor-fundo: #111827;
+    --cor-branco: #1F2937;
+    --cor-borda: #6B7280;
+    --cor-primaria: #93C5FD;
+    --cor-primaria-clara: #1E3A5F;
+    --cor-secundaria: #FBBF24;
+    --cor-secundaria-escura: #FBBF24;
+    --cor-erro: #FCA5A5;
+  }
+  button { color: #111827; }
+  .card { background: var(--cor-branco); border-color: var(--cor-borda); }
+  .valido { border-color: #86EFAC; }
+  .invalido { border-color: #FCA5A5; }
+  .erro { color: var(--cor-erro); }
+  .sucesso { color: #86EFAC; }
+}
+
+/* ===== Alto contraste ===== */
+@media (prefers-contrast: more) {
+  :root {
+    --cor-texto-suave: var(--cor-texto);
+    --cor-borda: currentColor;
+  }
+  a { text-decoration: underline; }
+  a:focus-visible, button:focus-visible, input:focus-visible,
+  textarea:focus-visible, select:focus-visible { outline-width: 4px; }
+}
+
+/* ===== Movimento reduzido ===== */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

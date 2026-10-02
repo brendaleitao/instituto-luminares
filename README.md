@@ -56,7 +56,14 @@ instituto-luminares/
 > O site usa módulos JavaScript, que **não funcionam** ao abrir o arquivo direto no navegador (endereço `file://`). É necessário um servidor local, como o Live Server.
 
 ## 📦 Dependências e build
-O projeto não usa gerenciador de pacotes (npm) nem etapa de build. A única dependência, o Day.js, é carregada por CDN, então não há nada para instalar: basta seguir os passos de execução acima.
+O desenvolvimento com o Live Server **não exige instalar nada**. O **Vite** é usado só para gerar a versão de produção, com CSS, JS e HTML prontos para publicar.
+
+```bash
+npm install
+npm run build
+```
+
+A pasta `dist/` recebe os arquivos otimizados. Para conferir o resultado localmente, use `npm run preview`.
 
 ## 🧪 Testes
 O projeto não possui testes automatizados. A verificação é manual:

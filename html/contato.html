@@ -10,9 +10,13 @@
 <body>
 
   <header>
-    <img src="../img/logo-luminares.png"
-         alt="Logotipo do Instituto Luminares: sol sobre três figuras humanas de braços abertos"
-         width="240">
+    <picture>
+      <source srcset="../img/logo-luminares.avif" type="image/avif">
+      <source srcset="../img/logo-luminares.webp" type="image/webp">
+      <img src="../img/logo-luminares.png"
+           alt="Logotipo do Instituto Luminares: sol sobre três figuras humanas de braços abertos"
+           width="240" height="120">
+    </picture>
     <h1>Instituto Luminares</h1>
     <nav aria-label="Menu principal">
   <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir ou fechar o menu">

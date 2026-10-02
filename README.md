@@ -1,6 +1,6 @@
 # Instituto Luminares – Site Institucional
 
-Site institucional desenvolvido para uma ONG fictícia (Instituto Luminares), como projeto de curso. A aplicação é uma SPA (Single Page Application) feita com HTML, CSS e JavaScript puro, sem frameworks e sem dependências externas.
+Site institucional desenvolvido para uma ONG fictícia (Instituto Luminares), como projeto de curso. A aplicação é uma SPA (Single Page Application) feita com HTML, CSS e JavaScript puro, sem frameworks. A única biblioteca externa é o Day.js, carregado por CDN.
 
 ## 🎯 Sobre o projeto
 O site apresenta a organização, seus projetos sociais, um cadastro de voluntários e um canal de contato, com foco em estrutura semântica e acessibilidade web.
@@ -18,6 +18,7 @@ A navegação entre as páginas acontece sem recarregar o site, por meio de rote
 - **CSS3** – estilos do site em `css/estilos.css`
 - **JavaScript (ES Modules)** – roteamento, menu, formulário e templates
 - **localStorage** – armazenamento da lista de voluntários no navegador
+- **Day.js (CDN)** – formatação de datas na lista de voluntários
 - **Git e GitHub** – versionamento, branches, pull requests e releases
 - **GitFlow, Conventional Commits e versionamento semântico** – organização do fluxo de trabalho
 
@@ -55,7 +56,7 @@ instituto-luminares/
 > O site usa módulos JavaScript, que **não funcionam** ao abrir o arquivo direto no navegador (endereço `file://`). É necessário um servidor local, como o Live Server.
 
 ## 📦 Dependências e build
-O projeto não usa gerenciador de pacotes (npm) nem etapa de build. Não há nada para instalar: basta seguir os passos de execução acima.
+O projeto não usa gerenciador de pacotes (npm) nem etapa de build. A única dependência, o Day.js, é carregada por CDN, então não há nada para instalar: basta seguir os passos de execução acima.
 
 ## 🧪 Testes
 O projeto não possui testes automatizados. A verificação é manual:
@@ -67,7 +68,7 @@ O projeto não possui testes automatizados. A verificação é manual:
 
 ## 🔀 Fluxo de trabalho
 
-- `main`: versões estáveis, marcadas com tags (v1.0.0, v1.0.1).
+- `main`: versões estáveis, marcadas com tags (v1.0.0, v1.0.1, v1.0.2).
 - `develop`: integração do desenvolvimento contínuo.
 - `feature/*`: novas funcionalidades, criadas a partir da `develop`.
 - `hotfix/*`: correções urgentes, criadas a partir da `main`.

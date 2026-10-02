@@ -7,12 +7,13 @@ export function iniciarMenu() {
   const btnMenu = document.getElementById("btn-menu");
 
   // Clique nos links: impede o padrão e deixa o JS conduzir
-  menu.addEventListener("click", (e) => {
+      menu.addEventListener("click", (e) => {
     const link = e.target.closest("a");
     if (!link) return;
     e.preventDefault();
     location.hash = link.getAttribute("href");
     menu.classList.remove("aberto");
+    btnMenu.setAttribute("aria-expanded", "false");
   });
 
   // Clique no botão hambúrguer: abre e fecha o menu

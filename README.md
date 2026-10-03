@@ -19,6 +19,8 @@ A navegação entre as páginas acontece sem recarregar o site, por meio de rote
 - **JavaScript (ES Modules)** – roteamento, menu, formulário e templates
 - **localStorage** – armazenamento da lista de voluntários no navegador
 - **Day.js (CDN)** – formatação de datas na lista de voluntários
+- **Vite** – build de produção (minificação de CSS e JS)
+- **Imagens AVIF/WebP** – com `<picture>` e PNG como alternativa
 - **Git e GitHub** – versionamento, branches, pull requests e releases
 - **GitFlow, Conventional Commits e versionamento semântico** – organização do fluxo de trabalho
 
@@ -29,6 +31,7 @@ instituto-luminares/
 │   └── estilos.css      # estilos do site
 ├── html/                # páginas do site
 ├── img/                 # imagens utilizadas
+├── dist/                # build de produção (gerada, não vai ao Git)
 ├── js/
 │   ├── main.js          # ponto de entrada: liga as peças
 │   ├── router.js        # roteamento por hash
@@ -37,6 +40,8 @@ instituto-luminares/
 │   ├── templates.js     # geração dinâmica de HTML
 │   ├── storage.js       # leitura e gravação no localStorage
 │   └── utils.js         # funções utilitárias (ex.: validação de e-mail)
+├── package.json         # scripts e dependências de desenvolvimento
+├── vite.config.js       # configuração do build (Vite)
 └── README.md
 ```
 
@@ -47,9 +52,9 @@ instituto-luminares/
 
 ## 🚀 Como executar
 1. Clone o repositório:
-```bash
+   ```bash
    git clone https://github.com/brendaleitao/instituto-luminares.git
-```
+   ```
 2. Abra a pasta `instituto-luminares` no VS Code.
 3. Clique com o botão direito em `html/index.html` e escolha **Open with Live Server**.
 
@@ -75,7 +80,7 @@ O projeto não possui testes automatizados. A verificação é manual:
 
 ## 🔀 Fluxo de trabalho
 
-- `main`: versões estáveis, marcadas com tags (v1.0.0, v1.0.1, v1.0.2).
+- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.1).
 - `develop`: integração do desenvolvimento contínuo.
 - `feature/*`: novas funcionalidades, criadas a partir da `develop`.
 - `hotfix/*`: correções urgentes, criadas a partir da `main`.

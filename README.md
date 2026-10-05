@@ -83,7 +83,7 @@ O projeto não possui testes automatizados. A verificação é manual:
 
 ## 🔀 Fluxo de trabalho
 
-- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.1).
+- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.3).
 - `develop`: integração do desenvolvimento contínuo.
 - `feature/*`: novas funcionalidades, criadas a partir da `develop`.
 - `hotfix/*`: correções urgentes, criadas a partir da `main`.

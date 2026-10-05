@@ -1,6 +1,6 @@
 {
   "name": "instituto-luminares",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": true,
   "description": "Site institucional do Instituto Luminares: SPA em HTML, CSS e JavaScript puro, com build de produção via Vite.",
   "type": "module",

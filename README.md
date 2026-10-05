@@ -44,6 +44,7 @@ instituto-luminares/
 │   ├── storage.js       # leitura e gravação no localStorage
 │   └── utils.js         # funções utilitárias (ex.: validação de e-mail)
 ├── package.json         # scripts e dependências de desenvolvimento
+├── vercel.json          # configuração do deploy (Vercel)
 ├── vite.config.js       # configuração do build (Vite)
 └── README.md
 ```
@@ -73,6 +74,18 @@ npm run build
 
 A pasta `dist/` recebe os arquivos otimizados. Para conferir o resultado localmente, use `npm run preview`.
 
+## 🌐 Deploy
+O site é publicado na **Vercel** a partir da branch `main`: https://instituto-luminares.vercel.app
+
+| Item | Valor |
+|---|---|
+| Comando de build | `npm run build` |
+| Pasta de saída | `dist` |
+| Gatilho | *push* na `main` (deploy automático) |
+| Pré-visualização | cada pull request recebe um link de teste |
+
+O arquivo `vercel.json` redireciona a raiz `/` para `html/index.html`, onde fica a SPA. As rotas por hash (`#/projetos`) funcionam sem configuração extra, porque o servidor só recebe `/`.
+
 ## 🧪 Testes
 O projeto não possui testes automatizados. A verificação é manual:
 
@@ -83,9 +96,10 @@ O projeto não possui testes automatizados. A verificação é manual:
 
 ## 🔀 Fluxo de trabalho
 
-- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.3).
+- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.4).
 - `develop`: integração do desenvolvimento contínuo.
 - `feature/*`: novas funcionalidades, criadas a partir da `develop`.
+- `fix/*`, `docs/*` e `chore/*`: correções, documentação e manutenção, também criadas a partir da `develop`.
 - `hotfix/*`: correções urgentes, criadas a partir da `main`.
 
 Os commits seguem Conventional Commits (`feat:`, `fix:`, `docs:`) e as versões seguem o versionamento semântico (MAJOR.MINOR.PATCH). A partir da v1.1.0, toda integração de branch é feita por pull request.

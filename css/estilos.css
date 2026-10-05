@@ -584,12 +584,16 @@ nav a:hover {
     --cor-branco: #1F2937;
     --cor-borda: #6B7280;
     --cor-primaria: #93C5FD;
+    --cor-primaria-escura: #BFDBFE;
     --cor-primaria-clara: #1E3A5F;
     --cor-secundaria: #FBBF24;
     --cor-secundaria-escura: #FBBF24;
+    --cor-apoio: #5EEAD4;
     --cor-erro: #FCA5A5;
   }
   button { color: #111827; }
+  .botao, .badge--aviso { color: #111827; }
+  .badge--neutro { background: #4B5563; }
   .card { background: var(--cor-branco); border-color: var(--cor-borda); }
   .valido { border-color: #86EFAC; }
   .invalido { border-color: #FCA5A5; }

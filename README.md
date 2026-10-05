@@ -96,7 +96,7 @@ O projeto não possui testes automatizados. A verificação é manual:
 
 ## 🔀 Fluxo de trabalho
 
-- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.4).
+- `main`: versões estáveis, marcadas com tags (v1.0.0 a v1.2.5).
 - `develop`: integração do desenvolvimento contínuo.
 - `feature/*`: novas funcionalidades, criadas a partir da `develop`.
 - `fix/*`, `docs/*` e `chore/*`: correções, documentação e manutenção, também criadas a partir da `develop`.

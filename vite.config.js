@@ -5,7 +5,13 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-      input: "html/index.html"
+      input: {
+        index: "html/index.html",
+        projetos: "html/projetos.html",
+        cadastro: "html/cadastro.html",
+        contato: "html/contato.html",
+        componentes: "html/componentes.html"
+      }
     }
   }
 });

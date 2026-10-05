@@ -2,6 +2,8 @@
 
 Site institucional desenvolvido para uma ONG fictícia (Instituto Luminares), como projeto de curso. A aplicação é uma SPA (Single Page Application) feita com HTML, CSS e JavaScript puro, sem frameworks. A única biblioteca externa é o Day.js, carregado por CDN.
 
+🌐 **Site publicado:** [instituto-luminares.vercel.app](https://instituto-luminares.vercel.app)
+
 ## 🎯 Sobre o projeto
 O site apresenta a organização, seus projetos sociais, um cadastro de voluntários e um canal de contato, com foco em estrutura semântica e acessibilidade web.
 
@@ -20,6 +22,7 @@ A navegação entre as páginas acontece sem recarregar o site, por meio de rote
 - **localStorage** – armazenamento da lista de voluntários no navegador
 - **Day.js (CDN)** – formatação de datas na lista de voluntários
 - **Vite** – build de produção (minificação de CSS e JS)
+- **Vercel** – hospedagem e deploy automático a partir da branch `main`
 - **Imagens AVIF/WebP** – com `<picture>` e PNG como alternativa
 - **Git e GitHub** – versionamento, branches, pull requests e releases
 - **GitFlow, Conventional Commits e versionamento semântico** – organização do fluxo de trabalho
